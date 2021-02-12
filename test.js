@@ -6,7 +6,10 @@ window.onload = function () {
         alert("hiho")
     });
     $("button#btnAdd").click(function() {
-        $("#inpZahl1").val("11");
+        let zahl1 = $("#inpZahl1").val();
+        let zahl2 = $("#inpZahl2").val();
+        let erg = rechner(zahl1, zahl2, '+');
+        $("#lblRes").html(erg);
         alert('das ergebnis ist: ' + $("#inpZahl1").val());
     })
 }
